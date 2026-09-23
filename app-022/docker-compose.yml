@@ -1,0 +1,8 @@
+services:
+  app-022:
+    build: .
+    image: app-022-codegen-05:latest
+    container_name: app-022-codegen-05
+    ports:
+      - "8142:80"
+    restart: unless-stopped
